@@ -17,5 +17,6 @@
 //= require_tree .
 
 jQuery(function($){
-	$('.post').annotator();
+	var post = $('.post').annotator();
+	post.annotator('addPlugin', 'Tags');
 });
