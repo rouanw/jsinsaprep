@@ -12,5 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require annotator
 //= require turbolinks
 //= require_tree .
+
+jQuery(function($){
+	$('body').annotator();
+});
