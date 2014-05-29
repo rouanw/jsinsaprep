@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require showdown
 //= require annotator
 //= require turbolinks
 //= require_tree .
@@ -37,4 +38,5 @@ jQuery(function($){
 		loadFromSearch: {uri: $('.post').attr('id')},
 		annotationData: {uri: $('.post').attr('id')}
 	});
+	post.annotator('addPlugin', 'Markdown');
 });
