@@ -32,4 +32,9 @@ jQuery(function($){
 			}
 		]
 	});
+	post.annotator('addPlugin', 'Store', {
+		prefix: '/store',
+		loadFromSearch: {uri: $('.post').attr('id')},
+		annotationData: {uri: $('.post').attr('id')}
+	});
 });

@@ -11,7 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140529124310) do
+ActiveRecord::Schema.define(version: 20140529130743) do
+
+  create_table "annotations", force: true do |t|
+    t.string   "uri"
+    t.text     "data"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "posts", force: true do |t|
     t.string   "title"

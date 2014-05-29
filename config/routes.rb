@@ -1,5 +1,7 @@
 Blog2::Application.routes.draw do
   resources :posts
+  get 'store/search' => 'annotations#search'
+  post 'store/annotations' => 'annotations#create'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
