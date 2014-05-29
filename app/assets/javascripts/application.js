@@ -19,4 +19,5 @@
 jQuery(function($){
 	var post = $('.post').annotator();
 	post.annotator('addPlugin', 'Tags');
+	post.annotator('addPlugin', 'Permissions', {user: 'Alice'});
 });
