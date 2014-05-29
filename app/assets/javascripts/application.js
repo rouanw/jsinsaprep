@@ -17,5 +17,5 @@
 //= require_tree .
 
 jQuery(function($){
-	$('body').annotator();
+	$('.post').annotator();
 });
